@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+html {
+  -webkit-text-size-adjust: 100%; 
+  -moz-tab-size: 4; 
+  tab-size: 4;
+  scroll-behavior: smooth; 
+}
+
+body {
+  min-height: 100vh; 
+  line-height: 1.5; 
+  -webkit-font-smoothing: antialiased; 
+  text-rendering: optimizeLegibility; 
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block; 
+  max-width: 100%; 
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit; 
+  border: none; 
+  background: none; 
+}
+
+button {
+  cursor: pointer; 
+}
+
+a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+ul,
+ol {
+  list-style: none; 
+}
+
+
+blockquote,
+q {
+  quotes: none; 
+}
+
+:focus {
+  outline: 0;
+}
+

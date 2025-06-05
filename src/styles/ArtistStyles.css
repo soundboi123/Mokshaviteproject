@@ -1,0 +1,329 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: black;
+  color: white;
+}
+
+header {
+  background-color: rgb(0, 0, 0, 0.9);
+  width: 100%;
+  z-index: 100;
+  color: white;
+  position: fixed;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--padding-medium);
+}
+nav {
+  opacity: 0.9;
+  margin-inline-start: auto;
+}
+nav ul li a {
+  padding: 1rem;
+}
+.padding-max {
+  padding: 10rem;
+}
+
+.container {
+  max-width: 80rem;
+  margin: auto;
+  padding: 1rem;
+}
+
+.hero-section-fraksel {
+  background-image: url(../images/Fraksel-logo.jpg);
+  background-size: cover;
+  background-attachment: scroll;
+
+  height: 95vh;
+  width: 100%;
+  position: relative;
+}
+
+.hero-section-yagatashi {
+  background-image: url(/Moksha/artists/wout/Wout-images/wout-profile-pic.jpg);
+  background-size: cover;
+  background-attachment: scroll;
+
+  height: 95vh;
+  width: 100%;
+  position: relative;
+}
+
+.section-two {
+  background-color: black;
+  z-index: 1000;
+}
+.section-two h2 {
+  margin-top: 1rem;
+}
+
+.wrapper-button {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(54rem, auto);
+}
+.wrapper-button .two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .button {
+    a {
+      color: black;
+      padding: 2rem;
+      padding-inline: 3rem;
+      background-color: #ffeb00;
+      border-radius: 0.2rem;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+.button:hover {
+  transform: translate(0, -3px);
+  background-color: #fc0019;
+}
+.button a:hover {
+  background-color: #fc0019;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(25rem, auto);
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+.wrapper article {
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+
+/*CARDS*/
+.one,
+.two,
+.three,
+.four {
+  display: flex;
+  flex-direction: column-reverse;
+  transition: 0.5s ease-in-out;
+}
+.four p {
+  margin-top: _1rem;
+}
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover {
+  transform: scale(1.1);
+  .card-content {
+    transform: translate(0, -100px);
+    background-color: black;
+  }
+  .hidden {
+    opacity: 1;
+  }
+}
+
+.image-container {
+  height: 100%;
+  width: 100%;
+}
+.wrapper .image-container {
+  box-shadow: 0 0 100px 10px rgb(255, 1, 215, 0.3);
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  display: block;
+
+  transition: 0.5s ease-in-out;
+}
+.image-container1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+.image-container1 {
+  height: 100%;
+  width: 100%;
+}
+.image-container img:hover {
+  transform: scale(1.1);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding-block: 1rem;
+  padding-bottom: 5rem;
+  transition: 0.5s ease-in-out;
+}
+.hidden {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.wrapper2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(24rem, auto);
+  gap: 1rem;
+}
+.wrapper2 article {
+  background-color: rgb(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.section-three {
+  /*background-image: url("../images/seven-dwarfs.jpg");*/
+  background-image: url("../images/fraktal.gif");
+  background-size: cover;
+  background-position: center;
+
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+
+.section-three h2 {
+  font-size: 8rem;
+}
+
+.wrapper3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(24rem, auto);
+  gap: 3rem;
+  margin-top: 2rem;
+}
+.wrapper3 article {
+  border-radius: 1rem;
+}
+
+.scroll-snap-container {
+  scroll-snap-type: y mandatory;
+
+  overflow-y: scroll;
+}
+.scroll-snap-align {
+  scroll-snap-align: start;
+}
+
+.portofolio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(50rem, auto);
+  gap: 3rem;
+  margin-bottom: 5rem;
+  padding: 2rem;
+}
+
+.portofolio-item {
+  background-color: #fff; 
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+.flexible-grid {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(12rem, 12rem);
+  gap: 1.5rem;
+  
+}
+
+.big-text {
+  position: absolute;
+  top: 4rem;
+  left: 30%;
+  font-size: 8rem;
+  line-height: 1;
+  color: rgba(255, 204, 0);
+  z-index: 2;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.behind-text {
+  position: absolute;
+  top: 11rem;
+  left: 30%;
+  font-size: 8rem;
+  line-height: 0.8;
+  color: transparent; 
+  -webkit-text-stroke: 2px #ffcc00; 
+  z-index: -1;
+  pointer-events: none;
+  white-space: pre-line;
+}
+
+
+
+.rotated-image {
+  width: 300px;
+  transform: rotate(-10deg);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);  
+}
+
+.rotated-image:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.text{
+  margin-bottom: 4rem;
+}
+.container-for-my-fucking-header {
+  max-width: 86rem;
+  margin-inline: auto;
+  padding: 1rem;
+}
+.image-logo{
+  display: block;
+  max-width: 3rem;
+}
+.titel-logo-marge {
+  margin-inline-start: 1rem;
+}
+header .container-for-my-fucking-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plaats{
+  position: relative;
+  margin-top: 10rem;
+}
+
+.music-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}

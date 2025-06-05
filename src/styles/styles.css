@@ -1,0 +1,338 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: black;
+  color: white;
+}
+
+header {
+  background-color: rgb(0, 0, 0, .9);
+  width: 100%;
+  z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+  color: white;
+  position: fixed;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container-for-my-fucking-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  z-index: 1000000000000000000000000000000000000000000000;
+  gap: .5rem;
+}
+nav {
+  opacity: 1;
+  z-index: 1000000000000000000000000000000000000000000000;
+  margin-inline-start: auto;
+}
+nav ul li a {
+  padding: 1rem;
+}
+.padding-max {
+  padding: 10rem;
+}
+
+.container {
+  max-width: 80rem;
+  margin-inline: auto;
+  padding: 1rem;
+}
+
+.hero-section {
+  background-image: url("../images/front_page_image.jpg");
+  background-size: cover;
+  background-attachment: scroll;
+
+  height: 90vh;
+  width: 100%;
+  position: relative;
+}
+
+.section-two {
+  background-color: black;
+  z-index: 1000;
+}
+.section-two h2 {
+  margin-top: 1rem;
+}
+
+.wrapper-button {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(54rem, auto);
+}
+.wrapper-button .two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .button {
+    a {
+      color: black;
+      padding: 2rem;
+      padding-inline: 3rem;
+      background-color: #ffeb00;
+      border-radius: 0.2rem;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+.button:hover {
+  transform: translate(0, -3px);
+  background-color: #fc0019;
+}
+.button a:hover {
+  background-color: #fc0019;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(20rem, auto);
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.wrapper-market {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(20rem, auto);
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.wrapper article {
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+
+/*CARDS*/
+.one,
+.two,
+.three,
+.four {
+  display: flex;
+  flex-direction: column-reverse;
+  transition: 0.5s ease-in-out;
+}
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover {
+  transform: scale(1.01);
+  .card-content {
+    transform: translate(0, -100px);
+    background-color: black;
+  }
+  .card-content2 {
+    transform: translate(0, -100px);
+  }
+  .hidden {
+    opacity: 1;
+  }
+}
+.image-container {
+  height: 100%;
+  width: 100%;
+}
+.guide-container {
+  padding-top: 6rem;
+  height: 100%;
+  width: 100%;
+}
+.wrapper .image-container {
+  box-shadow: 0 0 100px 10px rgb(255, 1, 215, 0.3);
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+
+.image-container1 img {
+  max-height: 24rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+.image-container1 {
+  height: 100%;
+  width: 100%;
+}
+.image-container img:hover {
+  transform: scale(1.1);
+  z-index: -10;
+}
+
+.card-content, .card-content2 {
+  display: flex;
+  flex-direction: column;
+  padding-block: 1rem;
+  text-align: center;
+  z-index: 10;
+  height: 20vh;
+  transition: 0.5s ease-in-out;
+  h3 {
+    z-index: 10000000000;
+  }
+}
+
+.card-content .hidden {
+  opacity: 0;
+  z-index: 1000000;
+  transition: 0.5s ease-in-out;
+}
+.card-content2 .hidden {
+  opacity: 0;
+  z-index: 1000000;
+  transition: 0.5s ease-in-out;
+}
+.wrapper2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(24rem, auto);
+  gap: 1rem;
+}
+.wrapper2 article {
+  background-color: rgb(255, 255, 255, 0.2);
+  border-radius: .2rem;
+  padding: 1rem;
+}
+
+.section-three {
+  /*background-image: url("../images/seven-dwarfs.jpg");*/
+  background-image: url("../gifs/geometry\ GIF.gif");
+  background-size: cover;
+  background-position: center;
+
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.section-three h2 {
+  font-size: 8rem;
+}
+
+.wrapper3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(24rem, auto);
+  gap: 3rem;
+  margin-top: 2rem;
+}
+.wrapper3 article {
+  border-radius: 1rem;
+}
+
+.scroll-snap-container {
+  scroll-snap-type: y mandatory;
+
+  overflow-y: scroll;
+}
+.scroll-snap-align {
+  scroll-snap-align: start;
+}
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 90vh;
+
+  box-shadow: 0 0 100px 1px rgb(255, 255, 255, 0.2);
+}
+
+.container-for-my-fucking-header {
+  max-width: 86rem;
+  margin-inline: auto;
+  padding: .5rem;
+}
+.image-logo{
+  display: block;
+  max-width: 3rem;
+}
+.titel-logo-marge {
+  margin-inline-start: 1rem;
+}
+.shit-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.openklapDing{
+  display: none;
+  margin-top: 2rem;
+}
+.samenhoudendInNav{
+  margin-inline-start: 10rem;
+}
+.flexible-grid {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(12rem, 12rem);
+  gap: 1.5rem;
+}
+.contact-grid{
+  margin-top: 6rem; 
+  display: grid; 
+  grid-auto-rows: minmax(6rem, auto);
+  grid-template-columns: repeat(24,1fr);
+  gap: 1rem;
+}
+
+.contact-card1{
+  grid-row: 1 ;
+  grid-column: 1 / 3; 
+  background-color: rgb(111, 111, 255);
+
+}
+
+.contact-card2{ 
+  grid-row: 1;
+  grid-column: 4 / 6;  
+  background-color: rgb(255, 111, 178);
+}
+
+.contact-card3{
+  grid-row: 1;
+  grid-column:  8 / 10;  
+  background-color: rgb(128, 255, 111);
+}
+
+.contact-card4{
+  grid-row: 3;
+  grid-column: 1 / 3;  
+  background-color: rgb(255, 0, 0);
+}
+.contact-card5{
+  grid-row: 4;
+  grid-column: 5 / 8;  
+  background-color: rgb(255, 0, 0);
+}
+
+.contact-grid div{
+  border: 1px solid rgba(245, 245, 245, 0.100);
+}
+
+.music-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}

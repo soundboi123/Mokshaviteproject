@@ -24,6 +24,7 @@ export default defineConfig({
         // om goed te kunnen werken heb ik alle content in de 'src' folder gestopt
         // dat is netter
         main: resolve(__dirname, 'src/index.html'),
+        market: resolve(__dirname, 'src/Market/index.html'),
       },
     },
   },

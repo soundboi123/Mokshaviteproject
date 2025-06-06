@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../styles/ArtistStyles.css" />
     <link rel="stylesheet" href="../../styles/resets.css" />
+    <link rel="stylesheet" href="./cesarslides.css" />
     <title>Fraksel Studio</title>
     <link rel="icon" type="image/png" href="/images/moksha-logo-100px.png" />
   </head>
@@ -94,55 +95,69 @@
       </div>
       <section class="section-two scroll-snap-align">
         <section class="container">
-          <div class="wrapper">
-            <article class="one">
-              <div class="card-content">
-                <h3>Sound on the police</h3>
-                <p class="hidden">Commision for Knaldrang Soundsystem</p>
-              </div>
-              <div class="image-container1">
-                <img src="/images/Sound-on-the-police.png" alt="" />
-              </div>
-            </article>
-            <article class="two">
-              <div class="card-content">
-                <h3>Megaton Madness 3</h3>
-                <p class="hidden">Commision for Knaldrang Soundsystem</p>
-              </div>
-              <div class="image-container1">
-                <img src="/images/megaton-madness-3.png" alt="" />
-              </div>
-            </article>
-            <article class="three">
-              <div class="card-content">
-                <h3>Thunderwatt?!</h3>
-                <p class="hidden">Commision for Imakari Projects</p>
-                <p class="hidden">placeholder</p>
-              </div>
-              <div class="image-container1">
-                <img src="/images/Thunderwatt.png" alt="" />
-              </div>
-            </article>
-            <article class="four">
-              <div class="card-content">
-                <h3>Underground Resistance</h3>
-                <p class="hidden">Commision for Imakari Projects</p>
-                <p class="hidden">placeholder</p>
-              </div>
-              <div class="image-container1">
-                <img src="/images/Underground-Resistance.png" alt="" />
-              </div>
-            </article>
-            <article class="four">
-              <div class="card-content">
-                <h3>Elementalz</h3>
-                <h4>Acid meets Harcore</h4>
-                <p class="hidden">Commision for Elementalz Collective</p>
-              </div>
-              <div class="image-container1">
-                <img src="/images/Elementalz.jpg" alt="" />
-              </div>
-            </article>
+          <div id="slides">
+            <div class="slide center">
+              <article class="one">
+                <div class="card-content">
+                  <h3>Sound on the police</h3>
+                  <p class="hidden">Commision for Knaldrang Soundsystem</p>
+                </div>
+                <div class="image-container1">
+                  <img src="/images/Sound-on-the-police.png" alt="" />
+                </div>
+              </article>
+            </div>
+
+            <div class="slide right">
+              <article class="two">
+                <div class="card-content">
+                  <h3>Megaton Madness 3</h3>
+                  <p class="hidden">Commision for Knaldrang Soundsystem</p>
+                </div>
+                <div class="image-container1">
+                  <img src="/images/megaton-madness-3.png" alt="" />
+                </div>
+              </article>
+            </div>
+
+            <div class="slide normal">
+              <article class="three">
+                <div class="card-content">
+                  <h3>Thunderwatt?!</h3>
+                  <p class="hidden">Commision for Imakari Projects</p>
+                  <p class="hidden">placeholder</p>
+                </div>
+                <div class="image-container1">
+                  <img src="/images/Thunderwatt.png" alt="" />
+                </div>
+              </article>
+            </div>
+
+            <div class="slide normal">
+              <article class="four">
+                <div class="card-content">
+                  <h3>Underground Resistance</h3>
+                  <p class="hidden">Commision for Imakari Projects</p>
+                  <p class="hidden">placeholder</p>
+                </div>
+                <div class="image-container1">
+                  <img src="/images/Underground-Resistance.png" alt="" />
+                </div>
+              </article>
+            </div>
+
+            <div class="slide normal">
+              <article class="four">
+                <div class="card-content">
+                  <h3>Elementalz</h3>
+                  <h4>Acid meets Harcore</h4>
+                  <p class="hidden">Commision for Elementalz Collective</p>
+                </div>
+                <div class="image-container1">
+                  <img src="/images/Elementalz.jpg" alt="" />
+                </div>
+              </article>
+            </div>
           </div>
         </section>
       </section>
@@ -162,5 +177,6 @@
         />
       </div>
     </main>
+    <script type="module" src="../../slide.js"></script>
   </body>
 </html>

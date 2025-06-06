@@ -86,7 +86,7 @@
             </article>
 
             <article class="two">
-              <a href="./artists/cesar/index.html">
+              <a href="./artists/cesar/">
                 <div class="card-content">
                   <h3>Fraksel</h3>
                   <p class="hidden">
@@ -95,10 +95,7 @@
                     engineer
                   </p>
                 </div>
-                <a
-                  href="./artists/cesar/index-cesar.html"
-                  class="image-container1"
-                >
+                <a href="./artists/cesar/" class="image-container1">
                   <img src="/images/cesar.png" alt="" />
                 </a>
               </a>
@@ -132,7 +129,7 @@
             </article>
 
             <article class="two">
-              <a href="./artists/cesar/index.html">
+              <a href="./artists/wobbe/">
                 <div class="card-content">
                   <h3>Soundboi</h3>
                   <p class="hidden">
@@ -140,7 +137,7 @@
                     Developer • Dubstep Producer • Sound Designer
                   </p>
                 </div>
-                <a href="./artists/cesar/index.html" class="image-container1">
+                <a href="./artists/wobbe/" class="image-container1">
                   <img src="/images/wobbe.png" alt="" />
                 </a>
               </a>
@@ -192,68 +189,8 @@
           <article class="four"></article>
         </div>
       </section>
-      <section class="container slidesSection">
-        <div id="slides">
-          <div class="slide center">
-            <img src="/images/wout.png" alt="Slide 1" />
-          </div>
-          <div class="slide right">
-            <img src="/images/cesar.png" alt="Slide 2" />
-          </div>
-          <div class="slide">
-            <img src="https://picsum.photos/600/400?random=3" alt="Slide 3" />
-          </div>
-          <div class="slide">
-            <img src="https://picsum.photos/600/400?random=4" alt="Slide 4" />
-          </div>
-          <div class="slide">
-            <img src="https://picsum.photos/600/400?random=5" alt="Slide 3" />
-          </div>
-          <div class="slide">
-            <img src="https://picsum.photos/600/400?random=6" alt="Slide 4" />
-          </div>
-          <div class="slide">
-            <img src="https://picsum.photos/600/400?random=7" alt="Slide 3" />
-          </div>
-          <div class="slide">
-            <img src="https://picsum.photos/600/400?random=8" alt="Slide 4" />
-          </div>
-          <div class="slide">
-            <img src="https://picsum.photos/600/400?random=9" alt="Slide 3" />
-          </div>
-          <div class="slide">
-            <img src="https://picsum.photos/600/400?random=10" alt="Slide 4" />
-          </div>
-          <div class="slide">
-            <img src="https://picsum.photos/600/400?random=11" alt="Slide 3" />
-          </div>
-          <div class="slide">
-            <img src="https://picsum.photos/600/400?random=12" alt="Slide 4" />
-          </div>
-        </div>
-      </section>
+      <section class="container slidesSection"></section>
     </main>
-    <script>
-      const slides = document.querySelectorAll("#slides .slide");
-      let currentCenter = 0;
-      slides[0].className = "slide center";
-      slides[1].className = "slide right";
-      slides[slides.length - 1].className = "slide left";
-
-      function nextSlide() {
-        slides[currentCenter].className = "slide";
-        const nextIndex = (currentCenter + 1) % slides.length;
-        const prevIndex = (currentCenter - 1 + slides.length) % slides.length;
-        slides[nextIndex].className = "slide";
-        slides[prevIndex].className = "slide";
-        currentCenter = nextIndex;
-        slides[currentCenter].className = "slide center";
-        slides[(currentCenter + 1) % slides.length].className = "slide right";
-        slides[(currentCenter - 1 + slides.length) % slides.length].className =
-          "slide left";
-      }
-
-      const slideInterval = setInterval(nextSlide, 800);
-    </script>
+    <script type="module" src="./slide.js"></script>
   </body>
 </html>

@@ -1,15 +1,20 @@
-const slides = document.querySelectorAll('#slides .slide');
-let currentSlide = 0;
+const slides = document.querySelectorAll("#slides .slide");
+      let currentCenter = 0;
+      slides[0].className = "slide center";
+      slides[1].className = "slide right";
+      slides[slides.length - 1].className = "slide left";
 
-if (slides.length === 0) {
-    console.error('No slides found');
-    return;
-}
+      function nextSlide() {
+        slides[currentCenter].className = "slide normal";
+        const nextIndex = (currentCenter + 1) % slides.length;
+        const prevIndex = (currentCenter - 1 + slides.length) % slides.length;
+        slides[nextIndex].className = "slide normal";
+        slides[prevIndex].className = "slide normal";
+        currentCenter = nextIndex;
+        slides[currentCenter].className = "slide center";
+        slides[(currentCenter + 1) % slides.length].className = "slide right";
+        slides[(currentCenter - 1 + slides.length) % slides.length].className =
+          "slide left";
+      }
 
-function nextSlide() {
-    slides[currentSlide].className = 'slide';
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].className = 'slide showing';
-}
-
-const slideInterval = setInterval(nextSlide, 500); // Change slide every 3 seconds
+      const slideInterval = setInterval(nextSlide, 3000);

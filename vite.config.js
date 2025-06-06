@@ -25,6 +25,7 @@ export default defineConfig({
         // dat is netter
         main: resolve(__dirname, 'src/index.html'),
         market: resolve(__dirname, 'src/Market/index.html'),
+        contact: resolve(__dirname, 'src/Contact/index.html'),
       },
     },
   },

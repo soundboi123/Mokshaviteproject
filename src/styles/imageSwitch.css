@@ -20,7 +20,7 @@
   max-width: 24rem; /* Adjust to match your image dimensions */
   min-height: 24rem;
   max-height: 30rem;
-  box-shadow: 0 1px 10px 1px rgb(255,255,255,.2);
+
 }
 .image-container-events-kosmik.image-card {
   position: relative;

@@ -283,9 +283,10 @@ nav ul li a {
   position: relative;
   width: 100%;
   height: 90vh;
-  overflow: hidden; 
+  
 }
 video {
+  display: block;
   object-fit: cover;
   width: 100%;
   height: 90vh;
@@ -494,4 +495,19 @@ video {
   100%{
     transform: translateX(0);
   }
+}
+#muteButton{
+
+  position: absolute;
+  color: white;
+  padding-block: .75rem;
+  padding-inline: 1rem;
+  text-align: center;
+  z-index: 1000000000000000000000000000;
+  font-size: 1.5rem;
+  bottom: 3rem;
+  background-color: black;
+  border-radius: 50%;
+
+
 }

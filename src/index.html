@@ -186,18 +186,25 @@
       <section class="section-four scroll-snap-align">
         <div class="video-container">
           <video
-            src="/video/mokshaEventVid.mp4"
+            id="myVideo"
+            src="/video/eventVid3.mp4"
             autoplay
             loop
-            playsinline
             muted
+            playsinline
             preload="auto"
           ></video>
+          <div class="container">
+            <button id="muteButton">
+              <i class="fa-solid fa-volume-xmark"></i>
+            </button>
+          </div>
         </div>
       </section>
 
       <section id="events" class="section-five container">
         <h2>upcoming events</h2>
+
         <div class="wrapper2">
           <article class="one"></article>
           <article class="two"></article>
@@ -371,5 +378,22 @@
     </main>
     <script type="module" src="./slide.js"></script>
     <script type="module" src="./scripts/main.js"></script>
+    <script>
+      const video = document.getElementById("myVideo");
+      const muteButton = document.getElementById("muteButton");
+
+      muteButton.addEventListener("click", () => {
+        // Toggle the muted property
+        video.muted = !video.muted;
+        // Update button text based on mute state
+        muteButton.innerHTML = video.muted
+          ? '<i class="fa-solid fa-volume-xmark"></i>'
+          : '<i class="fa-solid fa-volume-high"></i>';
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/45d1cd7a14.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

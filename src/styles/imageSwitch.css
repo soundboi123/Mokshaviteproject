@@ -1,13 +1,13 @@
 .event{
   margin-inline-start: -3rem;
+  margin-top: 1rem;
 }
 .image-container-events.image-card {
   position: relative;
   width: 43rem;
-  height: 37rem; /* Adjust to match your image dimensions */
+  height: 37rem; 
   perspective: 1000px;
   padding: 5rem;
- /* 3D context for the flip effect */
 }
 
 .event-content{
@@ -17,7 +17,7 @@
 .image-container-events.image-card img {
   margin: 3rem;
   min-width: 20rem;
-  max-width: 24rem; /* Adjust to match your image dimensions */
+  max-width: 24rem;
   min-height: 24rem;
   max-height: 30rem;
 
@@ -25,15 +25,16 @@
 .image-container-events-kosmik.image-card {
   position: relative;
   width: 89rem;
-  height: 33rem; /* Adjust to match your image dimensions */
+  height: 30rem; 
   perspective: 1000px;
   margin-right: -5rem;
- /* 3D context for the flip effect */
+  margin-top: 1rem;
 }
 .image-container-events-kosmik.image-card img {
   margin: 5rem;
+  margin-top: 2rem;
   min-width: 30rem;
-  max-width: 34rem; /* Adjust to match your image dimensions */
+  max-width: 34rem; 
   min-height: 24rem;
   max-height: 24rem;
 }
@@ -41,38 +42,38 @@
   position: absolute;
   top: 0;
   left: 0;
-  backface-visibility: hidden; /* Hides the back face during rotation */
-  transition: transform 1s ease-in-out; /* Smooth flip animation from your original */
+  backface-visibility: hidden;
+  transition: transform 1s ease-in-out;
 }
 
 .image1.active.front {
-  display: block; /* Matches your original .active style */
+  display: block; 
   transform: rotateY(0deg); 
-  /* Front image starts visible */
+ 
 }
 
 .image2.back {
-  transform: rotateY(180deg); /* Back image starts rotated (hidden) */
+  transform: rotateY(180deg);
 }
 
 .image-container-events.image-card.flipped .image1.active.front {
-  transform: rotateY(-180deg); /* Rotate front image when flipped */
+  transform: rotateY(-180deg);
 }
 
 .image-container-events.image-card.flipped .image2.back {
-  transform: rotateY(0deg); /* Rotate back image to visible when flipped */
+  transform: rotateY(0deg);
 }
 .image-container-events-kosmik.image-card.flipped .image1.active.front {
-  transform: rotateY(-180deg); /* Rotate front image when flipped */
+  transform: rotateY(-180deg); 
 }
 
 .image-container-events-kosmik.image-card.flipped .image2.back {
-  transform: rotateY(0deg); /* Rotate back image to visible when flipped */
+  transform: rotateY(0deg); 
 }
 .image-container-events-kosmik.image-card:hover .image1.active.front {
-  transform: rotateY(-180deg); /* Rotate front image when container is hovered */
+  transform: rotateY(-180deg);
 }
 
 .image-container-events-kosmik.image-card:hover .image2.back {
-  transform: rotateY(0deg); /* Rotate back image to visible when hovered */
+  transform: rotateY(0deg);
 }

@@ -4,7 +4,7 @@
 }
 .image-container-events.image-card {
   position: relative;
-  width: 43rem;
+  width: 29rem;
   height: 37rem; 
   perspective: 1000px;
   padding: 5rem;
@@ -24,7 +24,7 @@
 }
 .image-container-events-kosmik.image-card {
   position: relative;
-  width: 89rem;
+  width: 45rem;
   height: 30rem; 
   perspective: 1000px;
   margin-right: -5rem;

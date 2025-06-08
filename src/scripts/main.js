@@ -5,7 +5,7 @@ const cardContainers = document.querySelectorAll('.image-container-events.image-
 
 
 const cleanupFunctions = cardContainers.forEach(card => {
-  handleFlip(card, 1000);
+  handleFlip(card, 100);
 });
 
 

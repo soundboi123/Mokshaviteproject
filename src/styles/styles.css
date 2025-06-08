@@ -511,3 +511,46 @@ video {
 
   border: 3px solid yellow;  
 }
+.image-card-event-link{
+  display: block;
+  max-width: 45rem;
+  height: 100%;
+  transition: .3s ease-in-out;
+}
+.image-card-event-link:hover{
+  transform: translate(0,-2px);
+}
+.event-link{
+  display: flex;
+  align-items: center;
+  width: 80rem;
+}
+.event-link-content{
+  display: flex;
+  justify-content: space-between;
+  width: 20rem;
+  margin-inline-start: 2rem;
+}
+.event-link-button{
+  background-color: rgb(255, 255, 255, 0.3);
+  padding-inline: 2rem;
+  margin: 1rem;
+  font-size: 2rem;
+  color: white;
+  border-radius: .5rem;
+  text-align: center;
+  box-shadow: 0 5px 1px 2px rgb(255, 255, 255, 0.1);
+  transition: .3s ease-in-out;
+}
+.event-link-button:hover{
+  transform: translate(0,-2px);
+  background-color: rgb(255, 255, 255, 0.4);
+}
+.button-fix{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.space{
+  margin-inline-start: 1rem;
+}

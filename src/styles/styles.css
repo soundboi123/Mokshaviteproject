@@ -24,7 +24,7 @@ header .container-for-my-fucking-header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  animation: slideinFromRight 1.5s ease-in-out;
+  animation: slideinFromRight .8s ease-in-out;
 }
 nav ul {
   display: flex;
@@ -490,10 +490,10 @@ video {
 }
 @keyframes slideinFromRight{
   0%{
-    transform: translateX(-150%);
+    transform: translateY(-100px);
   }
   100%{
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 #muteButton{
@@ -507,4 +507,7 @@ video {
   bottom: 3rem;
   background-color: black;
   border-radius: 50%;
+  
+
+  border: 3px solid yellow;  
 }

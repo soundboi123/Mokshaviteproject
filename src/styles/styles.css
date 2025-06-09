@@ -583,6 +583,7 @@ video {
   margin: 1rem;
   font-size: 2rem;
   color: white;
+  font-weight: bold;
   border-radius: .5rem;
   text-align: center;
   box-shadow: 0 5px 1px 2px rgb(255, 255, 255, 0.1);
@@ -590,7 +591,21 @@ video {
 }
 .event-link-button:hover{
   transform: translate(0,-2px);
-  background-color: rgb(255, 255, 255, 0.4);
+  animation: colorGraded 5s linear infinite;
+}
+@keyframes colorGraded{
+  0%{
+    background-color: #800080;
+  }
+  33%{
+    background-color: #fc0019;
+  }
+  66%{
+    background-color: green;
+  }
+  100%{
+    background-color: #800080;
+  }
 }
 .button-fix{
   display: flex;

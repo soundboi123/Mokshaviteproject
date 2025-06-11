@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('/fonts/japanAHH.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 :root {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
  
@@ -82,9 +88,10 @@ nav ul li a {
 }
 .wrapper-button .two {
   display: flex;
-  margin-top: 15rem;
+  margin-top: 8rem;
   justify-content: center;
   align-items: center;
+  font-family: 'MyCustomFont';
 
   .button {
     a {
@@ -112,7 +119,9 @@ nav ul li a {
   gap: 3rem;
   margin-bottom: 5rem;
 }
-
+.index{
+  z-index: 100000;
+}
 .wrapper-market {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -141,8 +150,9 @@ nav ul li a {
 .four:hover {
   transform: scale(1.01);
   .card-content {
-    transform: translate(0, -100px);
-    background-color: black;
+    transform: translate(0, -200px);
+    background-color: rgb(0, 0, 0, 1);
+    box-shadow: 0 5px 1px 1px rgb(255, 255, 255, 0.1);
   }
   .card-content2 {
     transform: translate(0, -100px);
@@ -170,6 +180,7 @@ nav ul li a {
   object-position: center;
   display: block;
   transition: 0.5s ease-in-out;
+
 }
 
 .image-container1 img {
@@ -180,6 +191,8 @@ nav ul li a {
   object-position: center;
   display: block;
   transition: 0.5s ease-in-out;
+  border-radius: 1rem;
+  box-shadow: 0 1px 10px 1px rgb(255, 255, 255, 0.1);
 }
 .image-container1 {
   height: 100%;
@@ -196,8 +209,10 @@ nav ul li a {
   padding-block: 1rem;
   text-align: center;
   z-index: 10;
-  height: 20vh;
+  height: 33vh;
   transition: 0.5s ease-in-out;
+  border-radius: 1rem;
+  
   
 }
 
@@ -210,6 +225,25 @@ nav ul li a {
   opacity: 0;
   z-index: 1000000;
   transition: 0.5s ease-in-out;
+}
+.skills{
+  background-color: #800080;
+  opacity: .9;
+  margin-inline: .2rem;
+  padding: .5rem;
+  line-height: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 3px 1px 1px rgb(255, 255, 255, 0.2);
+}
+.artistButton{
+  background-color: #800080;
+  margin-top: 1.3rem;
+  margin-inline-end: 14rem;
+  padding-inline: .5rem;
+  color: white;
+  border-radius: 1rem;
+  box-shadow: 0 2px 1px 1px rgb(255, 255, 255, 0.8);
+
 }
 .wrapper2 {
   display: grid;
@@ -232,6 +266,9 @@ nav ul li a {
   position: relative;
   display: flex;
   align-items: center;
+}
+.normalText{
+  font-family: inherit;
 }
 .section-three::after{
   content: '';
@@ -265,8 +302,8 @@ nav ul li a {
 }
 .wrapper3 article {
   border-radius: 1rem;
+  margin-bottom: -8rem;
 
-  
 }
 .image-container {
   border-radius: 1rem;
@@ -393,13 +430,18 @@ video {
 }
 
 .introduction-section{
-  font-style: normal;
-  font-size: 1.2rem;
+  font-style: italic;
+  font-family: 'MyCustomFont';
+  font-size: 2rem;
   margin-top: 5rem;
-  margin-bottom: 5rem;
-  max-width: 40rem;
+  margin-bottom: 10rem;
+  max-width: 80rem;
+  height: 30rem;
   line-height: 2;
   text-align: center;
+  margin-top: -10rem;
+  padding: 10rem;
+  text-shadow: 0 1px 10px 1px rgb(255, 255, 255);
 }
 
 .italicNgreen{
@@ -520,6 +562,7 @@ video {
   max-width: 45rem;
   height: 100%;
   transition: .3s ease-in-out;
+  z-index: 100000000000000000000;
 }
 .image-card-event-link:hover{
   transform: translate(0,-2px);
@@ -528,6 +571,7 @@ video {
   display: flex;
   align-items: center;
   width: 80rem;
+  
 }
 .event-link-content{
   display: flex;
@@ -541,6 +585,7 @@ video {
   margin: 1rem;
   font-size: 2rem;
   color: white;
+  font-weight: bold;
   border-radius: .5rem;
   text-align: center;
   box-shadow: 0 5px 1px 2px rgb(255, 255, 255, 0.1);
@@ -548,7 +593,21 @@ video {
 }
 .event-link-button:hover{
   transform: translate(0,-2px);
-  background-color: rgb(255, 255, 255, 0.4);
+  animation: colorGraded 5s linear infinite;
+}
+@keyframes colorGraded{
+  0%{
+    background-color: #800080;
+  }
+  33%{
+    background-color: #fc0019;
+  }
+  66%{
+    background-color: green;
+  }
+  100%{
+    background-color: #800080;
+  }
 }
 .button-fix{
   display: flex;

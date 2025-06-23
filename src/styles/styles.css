@@ -6,7 +6,7 @@
 }
 :root {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
- 
+  --green: #5EC95C;
 }
 body {
   background-color: rgb(0, 0, 0);
@@ -17,7 +17,7 @@ body {
 header {
   background-color: rgb(0, 0, 0, .9);
   width: 100%;
-  z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+  z-index: 10000;
   color: white;
   position: fixed;
 }
@@ -32,15 +32,77 @@ header .container-for-my-fucking-header{
   justify-content: space-between;
   animation: slideinFromRight .8s ease-in-out;
 }
+
+.container-for-my-fucking-header {
+  max-width: 80rem;
+  margin-inline: auto;
+  padding: .5rem;
+}
+.image-logo{
+  display: block;
+  max-width: 3rem;
+}
+.titel-logo-marge {
+  margin-inline-start: 1rem;
+}
+.shit-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shit-nav li {
+list-style: none;
+position: relative;
+}
+.shit-nav li a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+  z-index: 2;
+}
+.shit-nav li a {
+  transition: 0.8s ease;
+  transform: scale(1.5);
+}
+.shit-nav li.active a::before{
+ content: '';
+ color: #fff;
+ bottom: 5px;
+ height: 3px;
+ width: 40%;
+ border-radius: 20px;
+ background:var(--green);
+}
+.shit-nav li:hover{
+ transition: 0.3s ease;
+ transform: scale(1.2) translate(0, -3px);
+}
+.shit-nav li a::before {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  height: 3px;
+  width: 0%;
+  left: 50%;
+  transform: translate(-50%, -3px);
+  background-color: var(--green);
+  border-radius: 30px;
+  transition: width 0.3s ease;
+}
+.shit-nav li:hover a::before {
+  width: 25%;
+}
+
 nav ul {
   display: flex;
   flex-direction: row;
-  z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+  z-index: 10000;
   gap: .5rem;
 }
 nav {
   opacity: 1;
-  z-index: 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+  z-index: 100000;
   margin-inline-start: auto;
 }
 nav ul li a {
@@ -227,13 +289,15 @@ nav ul li a {
   transition: 0.5s ease-in-out;
 }
 .skills{
+  align: start;
   background-color: rgb(255, 225, 255,.2);
   opacity: .9;
   margin-inline: .2rem;
-
+  font-size: 0.7rem;
   padding: .5rem;
   line-height: 2.5rem;
   border-radius: 1rem;
+
 }
 .artistButton{
   background-color: #800080;
@@ -350,22 +414,7 @@ video {
   height: 100px;
   background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
-.container-for-my-fucking-header {
-  max-width: 80rem;
-  margin-inline: auto;
-  padding: .5rem;
-}
-.image-logo{
-  display: block;
-  max-width: 3rem;
-}
-.titel-logo-marge {
-  margin-inline-start: 1rem;
-}
-.shit-nav {
-  display: flex;
-  justify-content: space-between;
-}
+
 .openklapDing{
   display: none;
   margin-top: 2rem;
@@ -384,27 +433,27 @@ video {
   margin-top: 6rem; 
   display: grid; 
   grid-auto-rows: minmax(6rem, auto);
-  grid-template-columns: repeat(24,1fr);
+  grid-template-columns: repeat(2,1fr);
   gap: 1rem;
 }
 
 .contact-card1{
   grid-row: 1 ;
-  grid-column: 1 / 3; 
-  background-color: rgb(111, 111, 255);
+  grid-column: 1 / 1; 
+  background-color: rgb(120, 120, 120);
 
 }
 
 .contact-card2{ 
-  grid-row: 1;
-  grid-column: 4 / 6;  
-  background-color: rgb(255, 111, 178);
+  grid-auto-rows: minmax(auto, auto);
+  grid-column: 2 / 2;  
+  background-color: rgb(120, 120, 120);
 }
 
 .contact-card3{
   grid-row: 1;
   grid-column:  8 / 10;  
-  background-color: rgb(128, 255, 111);
+  background-color: var(--green);
 }
 
 .contact-card4{
@@ -446,7 +495,7 @@ video {
 
 .italicNgreen{
   font-style: italic;
-  color: green;
+  color: var(--green);
 }
 .textDesign{
   font-size: 2rem;
@@ -527,12 +576,12 @@ video {
 }
 .facebookButton{
   background: #ADEBB3;
-  background: radial-gradient(circle,rgba(0, 168, 17, 1) 0%, rgb(13, 114, 23) 100%);
+  background: radial-gradient(circle,rgba(0, 168, 17, 1) 0%, var(--green) 100%);
    /*46, 111, 64, 1       0, 168, 17, 1*/
 }
 .facebookButton:hover{
   transform: translate(0, -1px);
-  background-color: rgba(0, 155, 21, 1);
+  background-color: var(--green);
 }
 @keyframes slideinFromRight{
   0%{
@@ -603,7 +652,7 @@ video {
     background-color: #fc0019;
   }
   66%{
-    background-color: green;
+    background-color: var(--green);
   }
   100%{
     background-color: #800080;

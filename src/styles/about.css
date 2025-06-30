@@ -1,3 +1,4 @@
+/* #region Hero Section*/
 .hero-section-about {
   background-image: url("/about/gentbrugge-dubs.jpg");
   background-size: cover;
@@ -42,66 +43,177 @@
   margin-top: 16rem;
   
 }
+/* #endregion */
 
 .about-columns {
   display: flex;
   flex-direction: column;
   align-content: center;
   width: 100%;
+  margin-bottom: 2rem;
 }
+
 .about-rows {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; 
   align-content: center;
   width: 100%;
+  margin-bottom: 2rem;  
 }
 
-.about-intro-header{
-  display: flex;
-  position: sticky;
-  margin-bottom: 1rem;
-  width: 18rem;
+/* #region First Section (About General */
+/* #region General */
+.about-card{
+ margin: 3rem 0.2rem 0rem 0.2rem;
+ width: 33.3%;
+ height: 75vh;
+ align-content: start;
+ border-radius: 5px;
+ position: relative;
+ cursor: pointer;
+ transition: 0.5s ease-in-out;
+ background-color: #f0f0f07a;
+ color: rgba(255, 255, 255, 0);
+}
+.about-card::before{
+  transform: translateY(1rem)
+}
+
+.about-card img{
+  position: absolute;
   align-content: center;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  overflow: hidden;
 }
-.about-intro-text{
-  font-size: 1.7rem;
-  color:black;
+.about-header {
+  position: relative;
+  padding-top: 35vh;
+  font-size: 2rem;
   font-weight: bold;
-  padding-left: 0.1rem;
-  padding-right: 0.1rem;
-  margin-left: 0.2rem;
-  background-color: var(--green);
-
+  color: #ffffff;
+  text-align: center;
+  text-decoration: unset;
+  text-shadow: 2px 2px 2px black;
 }
-.title-wrapper-sticky {
-    top: 8.5rem;
-    display: flex;
-    width: 100%;
-    max-width: 36rem;
-    flex-flow: column;
-
-}
-
-.logo-container2 {
-  display: flex;
-  width : 2.6rem;
-  height: 2.6rem;
-  background-color: var(--green);
-}
-.about-image-container {
-  float: right; /* Float the image container to the top-right */
-  width: 24rem; /* Set desired width */
-  height: auto; /* Maintain image aspect ratio */
-  margin: 0 0 1rem 1rem; /* Space between image and image container */
-}
-
-.about-image-container img {
-  width: auto; /* Ensure image fits container */
-  height: auto;
-}
-
-.about-text {
+.about-text{
+  position: relative;
   font-size: 1.2rem;
-  line-height: 1.6;
-  margin: 0;
+  padding: 0 3rem 3rem 3rem;
+  width: 100%;
+  text-align: center;
+  color: white;
+  opacity: 0;
 }
+/* #endregion */
+
+/* #region Hover */
+.about-card:hover {
+  border-radius: 20px;
+  border: solid 3px var(--green);
+  width: 100%;
+  transform: scaleY(1.05);
+  transition: 0.5s ease-in-out;
+  background-color: #f0f0f0c9;
+  color: rgba(255, 255, 255, 0);
+}
+.about-card:hover .about-text{
+  font-size: 1.2rem;
+  width: 100%;
+  color: white;
+  text-align: center;
+  align-content: center;
+  transition: ease-in-out 0.7s;
+  opacity: 1;
+  transition-delay: 0.2s ;
+  transform: translateY(-5rem);
+}
+.about-card:hover .about-header {
+  font-size: 2.5rem;
+  text-decoration: unset;
+  transition: ease-in-out 0.5s;
+  transform: translateY(-5rem);
+  text-shadow: 0px 0px 0px black;
+}
+.about-card:hover img{
+ border-radius: 18px;
+ filter: blur(1px) brightness(0.5) saturate(0.5);
+ transition: ease-in-out 0.5s;
+}
+/* #endregion */
+/* #endregion */
+
+/* #region Second Section (Timelne) */
+
+.timeline-rows {
+  display: flex;
+  flex-direction: row; 
+  width: 100%;
+  height: 6rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+ }
+
+.timeline-header{
+  font-size: 5rem;
+  font-weight: bold;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+.timeline-button{
+  height: 4.5rem;
+  width: 12rem;
+  font-size: 1.3rem;
+  color: black;
+  background-color: var(--green);
+  border-radius: 20px ;
+  font-weight: bold;
+  align-content: center;
+  text-align: center;
+  border: solid 1px greenyellow ;
+  box-shadow: black 0 2px 2px;
+}
+
+.timeline-section{
+  display: flex;
+  width: 100%;
+  height: 400vh;
+  background-color: rgba(128, 128, 128, 0.250);
+  border-radius: 50px;
+  justify-content: center;
+}
+
+.timeline-begin{
+  height: 4.5rem;
+  width: 12rem;
+  background-color: var(--green);
+  border-radius: 5px;
+  align-self: end;
+  text-align: center;
+
+
+}
+
+.timeline-present{
+  height: 4.5rem;
+  width: 12rem;
+  background-color: var(--green);
+  border-radius: 5px;
+  text-align: center;
+  align-self: start;
+
+}
+
+
+
+
+
+
+
+
+
+/* #endregion */

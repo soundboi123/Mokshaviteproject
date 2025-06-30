@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="../styles/resets.css" />
+    <link rel="stylesheet" href="../styles/market.css" />
     <link rel="icon" type="image/png" href="/images/moksha-logo-100px.png" />
     <title>Market</title>
   </head>
@@ -16,69 +17,54 @@
         </div>
         <h1 class="titel-logo-marge"><a href="#">Market</a></h1>
         <nav>
+        <nav>
           <ul class="shit-nav">
-            <li><a href="/">Home</a></li>
-            <li><a href="../index.html#artists"> Creators</a></li>
-            <li><a href="../index.html#events">Events</a></li>
-            <li><a href="../index-about.html">About</a></li>
-            <li><a href="../contact-index.html">Contact</a></li>
+            <li><a href="../Home/">Home</a></li>
+            <li><a href="../artists/">Creators</a></li>
+            <li class="active"><a href="../Market/">Market</a></li>
+            <li><a href="../events/">Events</a></li>
+            <li><a href="../About/">About</a></li>
+            <li><a href="../Contact/">Contact</a></li>
           </ul>
         </nav>
       </section>
     </header>
     <main>
-      <div class="guide-container">
-        <img src="/market-images/market-hoodie-guide.png" alt="" />
-      </div>
-      <div class="hero-content wrapper-button container">
-        <div class="one"></div>
-        <div class="two"></div>
-        <div class="three"></div>
-        <div class="four"></div>
-        <section class="section-two scroll-snap-align">
-          <section class="container">
-            <h2>Featured Products</h2>
-            <div class="wrapper-market">
-              <article class="one">
-                <div class="card-content">
-                  <h3>Monkey Madness</h3>
-                  <p>Join the monkey gang</p>
-                </div>
-                <div class="image-container">
-                  <img src="/images/trui-test-2.jpg" alt="" />
-                </div>
-              </article>
-              <article class="two">
-                <div class="card-content">
-                  <h3>Monkey Alien</h3>
-                  <p>Welkom to the new dimension</p>
-                </div>
-                <div class="image-container">
-                  <img src="/images/trui-test-4.jpg" alt="" />
-                </div>
-              </article>
-              <article class="two">
-                <div class="card-content">
-                  <h3>Corpo Spine</h3>
-                  <p>Become a cyborg</p>
-                </div>
-                <div class="image-container">
-                  <img src="/market-images/trui-test-5.png" alt="" />
-                </div>
-              </article>
-              <article class="four">
-                <div class="card-content">
-                  <h3>Dark Patterna</h3>
-                  <p>Come to the dark psyde</p>
-                </div>
-                <div class="image-container">
-                  <img src="/market-images/trui-test-6.png" alt="" />
-                </div>
-              </article>
+      <body>
+        
+        <div class="market-hero">
+          <img src="../market-images/cymatics.jpg">
+          <div class="market-hero-title"></div>
+        
+          <div class="market-sweater-grid">
+
+            <div class="market-text-card">
+              <div class="info-card">Our hoodies have extra large hoods for those with a lot of hair</div>
+              <div class="info-spacer"></div>
+              <div class="info-card">Locally printed for enduring graphics</div>
             </div>
-          </section>
-        </section>
-      </div>
+
+            <div class="market-sweater-card">
+              <div class="market-sweater-details autoShow">
+                <img src="../images/trui-test-3-tp.png"></div>
+            </div>
+
+            <div class="market-text-card">
+              <div class="info-spacer"></div>
+              <div class="info-card">High quality fabric for warm winters and long lasting comfort</div>
+              <div class="info-spacer"></div>
+            </div>
+
+          </div>
+        </div>
+          
+          <div class="market-section">
+            <div class="product-preview"></div>
+          </div>
+
+
+          <script src="market-script.js"></script>
+      </body>
     </main>
   </body>
 </html>

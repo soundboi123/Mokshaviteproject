@@ -7,7 +7,7 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, {
-  threshold: 0.6 // Trigger when 30% of element is visible
+  threshold: 0.4 // Trigger when 30% of element is visible
 });
 
 document.querySelectorAll('.autoShow').forEach(el => observer.observe(el));

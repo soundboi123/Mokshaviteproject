@@ -1,46 +1,9 @@
-.market-hero {
-  padding-top: 5rem;
-  display: flex;
-  top:50%;
-  width: 100%;
-  height: 60vh;
-  justify-content: center;
-  place-items: center;
-  background-color: #1f1f1f;
-}
-.market-hero img {
-    position: relative;
-    filter: hue-rotate(180deg) saturate(2);
-    transition: ease-in-out 0.5s;
-    height: 90vh;
-    width: 90%;
-    object-fit: cover;
-    align-items: center;
-    justify-content: center;  
-    border-radius: 30px;
-    box-shadow: rgb(0, 0, 0) 0 0 20px 10px;
-}
-.market-hero-sweater{
-    top: 10%;
-    scale: 0.3;
-    width: 100%;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-    filter: hue-rotate(180deg) saturate(0.5);
-    opacity: 0;
-}
-.market-sweater-grid{
-    display: flex;
-    position: absolute;
-    align-items: center;
-    margin-top: 8rem;
-    max-width: 80rem;
-    width: 100%;
-}
 .spacer {
   height: 100vh;
+}
+.hero-spacer{
+    height: 5rem;
+    width: 100%;
 }
 .autoShow {
   opacity: 0;
@@ -52,55 +15,121 @@
   opacity: 1;
   transform: translateY(0) scale(1);
 }
-.market-text-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    text-align: start;
-    background: rgba(255, 255, 255, 0.5); 
-    backdrop-filter: blur(10px);    
-    box-shadow:inset rgb(0, 0, 0, 0.5) 0 0 10px 1px;
-    -webkit-backdrop-filter: blur(10px);  
-    border-radius: 10px;  
-    padding: 2rem;
-    width: 29%;
-    margin: 1%;
-    height: 60vh;
+
+
+.market-hero {
+  display: flex;
+  top: 50%;
+  width: 100%;
+  height: 70vh;
+  justify-content: center;
+  background-color: #1a1a1a;
 }
+.market-hero-img {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    filter: hue-rotate(180deg) saturate(2);
+    height: 70vh;
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: rgb(0, 0, 0) 0 0 20px 10px;
+}
+.market-hero-img img{
+
+    height: 80vh;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.market-grid{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    max-width: 80rem;
+    width: 100%;
+    height: 80vh;
+}
+
 .market-sweater-card{
-    width: 40%;
-    height: 60vh;
+    width: 50%;
+    height: 70vh;
     border-radius: 10px;
-    
 }
 .market-sweater-card img{
-    height: 50vh;
+    margin-left: 2rem;
+    height: 70vh;
+}
+
+.market-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    width: 50%;
+    height: 70vh;
+}
+.market-text-card{
+    display: flex;
+    justify-content: end;
+    align-content: end;
+    border-radius: 10px;  
+    width: 100%;
 }
 .info-card{
-    height: 10rem;
-    margin: 0.5rem;
-    width: 80%;
-    border-radius: 40px;
+    display: flex;
+    justify-content: start;
+    align-content: start;
+    height: 8rem;
+    width: 60%;
+    border-radius: 20px;
     padding: 1rem;
-    border: solid 2px white;
     background-color: #ffffff50;
-
+    backdrop-filter: blur(10px);    
+    -webkit-backdrop-filter: blur(10px);  
+    box-shadow:inset rgb(0, 0, 0, 0.5) 0 0 10px 1px;
+    text-align: start;
+    font-size: 1.5rem;
 }
-.info-spacer{
-    height: 10rem;
-    margin: 0.5rem;
-    width: 55%;
-    border-radius: 40px;
-    padding: 1rem;
+.buy-now{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 1rem;
+    height:3rem;
+    width: 10rem;
+    background-color:#0071E3;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
 }
 .market-section{
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: 20vh;
-    background-color: rgb(13, 19, 19);
+    margin-top:8rem;
 }
-/*.product-preview{
-    height: 80vh;
-    max-width: 80rem;
-}*/
+.product-grid{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 80%;
+    border-radius: 20px;
+    background-color: rgba(36, 36, 36, 0.521);
+    gap: 2rem;
+}
+.product-preview{
+    height: 40rem;
+    width: 30%;
+    border-radius: 15px;
+    background-color: rgb(27, 26, 26);
+    margin: 1rem;
+}
+.product-card{
+    width: 100%;
+    z-index: 3;
+
+}

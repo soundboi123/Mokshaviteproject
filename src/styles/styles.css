@@ -749,7 +749,7 @@ video {
   background-color: rgb(22, 22, 22, 0.6);
   border-radius: 15px;
   gap: 1rem;
-  margin-bottom: 2rem
+  margin-bottom: 2rem;
 }
 .partner-card{
   width: auto;
@@ -757,6 +757,7 @@ video {
   background-color: rgb(50, 50, 50);
   border-radius: 20px;
   text-align: center;
+  padding: 0.2rem;
 }
 .partner-text{
   display: flex;

@@ -784,3 +784,6 @@ video {
   height: 90%;
   margin-top: 5%;
 }
+.hero-spacer{
+    height: 5rem;
+}

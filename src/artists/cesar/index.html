@@ -23,78 +23,100 @@
             <li><a href="../artists/">Creators</a></li>
             <li><a href="../Market/">Market</a></li>
             <li><a href="../../events/">Events</a></li>
-            <li><a href="../About/">About</a></li>
+            <li><a href="../creator/">creator</a></li>
             <li><a href="../Contact/">Contact</a></li>
           </ul>
         </nav>
       </section>
     </header>
-    <main class="main">
-      <div class="one"></div>
-      <div class="two"></div>
-      <div style="margin-top: 100px"></div>
-      <div class="flexible-grid">
-        <div class="big-text">FRAKSEL</div>
-        <div class="behind-text">
-          FRAKSEL <br />
-          FRAKSEL <br />
-          FRAKSEL <br />
-          FRAKSEL
+
+    <div class="hero-spacer"></div>
+
+    <main>
+      <div class="creator-section">
+
+        <div class="scrolling-background">
+            <div class="scrolling-text"><div class="background-text">
+              FRAKSEL • FRAKSEL • FRAKSEL • FRAKSEL • FRAKSEL 
+            </div>
+          </div>
         </div>
-        <div class="photo" style="grid-column: 2 / 4; grid-row: 1 / 1">
+        
+        <div class="photo">
           <img src="/images/cesar.png" alt="Photo" />
         </div>
-        <div class="text containMyGrid" style="grid-column: 4 / 6; grid-row: 3">
-          <div style="margin-top: 100px"></div>
+        <div class="text-card">
+          <div class="hero-spacer"></div>
           <h2>Hey Webtraveller!</h2>
           <p>I am Cesar - aka Fraksel.</p>
           <p>I'm a multidisciplinairy artist</p>
         </div>
+      
       </div>
-      <div class="music-container">
-        <iframe
-          width="100%"
-          height="200"
-          scrolling="no"
-          frameborder="no"
-          allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2107635687&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-        ></iframe>
-        <div
-          style="
-            font-size: 10px;
-            color: #cccccc;
-            line-break: anywhere;
-            word-break: normal;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
-              Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
-            font-weight: 100;
-          "
-        >
-          <a
-            href="https://soundcloud.com/thibault-versavel"
-            title="🕉️☯️🌿Spiritual Sun🌿☯️🕉️"
-            target="_blank"
-            style="color: #cccccc; text-decoration: none"
-            >🕉️☯️🌿Spiritual Sun🌿☯️🕉️</a
-          >
-          ·
-          <a
-            href="https://soundcloud.com/thibault-versavel/shamans-in-space-whispering-in"
-            title="Shamans in space whispering in the dark"
-            target="_blank"
-            style="color: #cccccc; text-decoration: none"
-          >
-            Shamans in space whispering in the dark</a
-          >
+      
+      <section class="creator-container">
+        
+        <div class="creator-row">
+          <div class="market-thumbnails">
+            <div class="creator-card">
+              <img src="../../images/Sound-on-the-police.png"  onclick="updateImage('../../images/Sound-on-the-police.png')">
+              <div class="creator-header">Sound on the police</div>
+              <div class="creator-text">
+                Commision for </br>
+                Knaldrang Soundsystem
+              </div>
+            </div>
+
+            <div class="creator-card">
+              <img src="../../images/megaton-madness-3.png"  onclick="updateImage('../../images/megaton-madness-3.png')">
+              <div class="creator-header">Megaton Madness 3</div>
+              <div class="creator-text"> Commision for </br>
+                Knaldrang Soundsystem
+              </div>
+            </div>
+
+            <div class="creator-card">
+              <img src="../../images/Thunderwatt.png"  onclick="updateImage('../../images/Thunderwatt.png')">
+              <div class="creator-header">Thunderwatt?!!</div>
+              <div class="creator-text">
+                Commision for </br>
+                Imakari Projects
+              </div>
+            </div>
+
+            <div class="creator-card">
+              <img src="../../images/Underground-Resistance.png"  onclick="updateImage('../../images/Underground-Resistance.png')">
+              <div class="creator-header">Underground Resistance</div>
+              <div class="creator-text">
+                Commision for </br>
+                Imakari Projects
+              </div>
+            </div>
+            
+            <div class="creator-card">
+              <img src="../../images/Elementalz.jpg"  onclick="updateImage('../../images/Elementalz.jpg')">
+              <div class="creator-header">Elementalz</div>
+              <div class="creator-text">
+                Commision for </br>
+                Elementalz
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div>
-      <div class="text container plaats">
+
+        <div class="active-image">
+          <div class="market-image-preview">
+            <img src="images/large1.jpg" alt="Preview" id="market-large-image">
+          </div>
+        </div>
+
+      </section>
+      <div class="medium-spacer"></div>
+
+      <!--<div class="container-section"> wobbes's slider
         <h2>My Illustrations:</h2>
-      </div>
+      
       <section class="section-two scroll-snap-align">
         <section class="container">
           <div id="slides">
@@ -163,6 +185,9 @@
           </div>
         </section>
       </section>
+      </div>-->
+
+
       <div class="gallery">
         <img src="your-image-1.jpg" alt="Stage photo 1" class="rotated-image" />
         <img
@@ -180,5 +205,12 @@
       </div>
     </main>
     <script type="module" src="../../slide.js"></script>
+    <script>
+      function updateImage(src) {
+      const img = document.getElementById("market-large-image");
+      if (img) img.src = src;
+      }
+    </script>
+
   </body>
 </html>

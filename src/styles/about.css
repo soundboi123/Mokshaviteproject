@@ -1,5 +1,7 @@
+
 /* #region Hero Section*/
 .hero-section-about {
+  ^position: absolute;
   background-image: url("/about/gentbrugge-dubs.jpg");
   background-size: cover;
   background-position: 1px;
@@ -55,6 +57,7 @@
 
 .about-rows {
   display: flex;
+  position: relative;
   flex-direction: row; 
   align-content: center;
   width: 100%;
@@ -188,17 +191,17 @@
 }
 
 .timeline-begin{
+  position: absolute;
   height: 4.5rem;
   width: 12rem;
   background-color: var(--green);
   border-radius: 5px;
   align-self: end;
   text-align: center;
-
-
 }
 
 .timeline-present{
+  position: absolute;
   height: 4.5rem;
   width: 12rem;
   background-color: var(--green);
@@ -207,6 +210,38 @@
   align-self: start;
 
 }
+
+.timeline-flexgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(25, 50, 25, 0.5);
+}
+.timeline-card{
+  display: flex;
+  place-content: center;
+  height: fit-content;
+  padding: 2rem 0 2rem 0;
+  background-color: rgb(92, 93, 108);
+  border-radius: 20px;
+}  
+.timeline-text{
+  width: auto;
+  height: 10rem;
+  aspect-ratio: 2.5 / 1;
+  background-color: rgb(0, 62, 128);
+  border-radius: 20px;
+}
+.timeline-img{
+  width: auto;
+  height: 20rem;
+  aspect-ratio: 1.5 / 1;
+  background-color: green;
+  border-radius: 20px;
+}
+
 
 
 

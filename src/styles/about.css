@@ -1,7 +1,7 @@
 
 /* #region Hero Section*/
 .hero-section-about {
-  ^position: absolute;
+  position: absolute;
   background-image: url("/about/gentbrugge-dubs.jpg");
   background-size: cover;
   background-position: 1px;
@@ -185,18 +185,20 @@
   display: flex;
   width: 100%;
   height: 400vh;
-  background-color: rgba(128, 128, 128, 0.250);
+  background-color: rgba(128, 128, 128, 0);
   border-radius: 50px;
   justify-content: center;
 }
 
 .timeline-begin{
   position: absolute;
+  align-self: end;
   height: 4.5rem;
   width: 12rem;
+  font-size: 2rem;
   background-color: var(--green);
-  border-radius: 5px;
-  align-self: end;
+  border-radius: 10rem;
+  align-content: center;
   text-align: center;
 }
 
@@ -204,29 +206,108 @@
   position: absolute;
   height: 4.5rem;
   width: 12rem;
+  font-size: 2rem;
   background-color: var(--green);
-  border-radius: 5px;
+  border-radius: 10rem;
+  align-content: center;
   text-align: center;
   align-self: start;
-
 }
 
 .timeline-flexgrid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  position: relative;
+  margin: 50px auto;
+  padding: 20px 0;
   width: 100%;
   padding: 1rem;
-  background-color: rgba(25, 50, 25, 0.5);
 }
-.timeline-card{
-  display: flex;
-  place-content: center;
-  height: fit-content;
-  padding: 2rem 0 2rem 0;
-  background-color: rgb(92, 93, 108);
-  border-radius: 20px;
+.timeline-flexgrid::before{
+  content:'';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 0.2rem;
+  height: 100%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  z-index:-1;
+}
+.timeline-content{
+  width: 45%;
+  position: relative;
+  padding: 4rem 5rem;
+  border-radius: 2rem;
+  background: #a7a7a7;
+  box-shadow: 0 2px 8px black;
 }  
+.timeline-item {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  margin: 5rem 0;
+}
+.timeline-item::before{
+  content:'';
+  position:absolute;
+  top:5rem;
+  width: 2rem;
+  height: 2rem;
+   background: #fff;
+    border-radius: 50%;
+  z-index: 1;
+}
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  top: 6rem;
+  width: 50%;
+  height: 0.2rem;
+  background: #ccc;
+  z-index: -1;
+}
+.timeline-item::before::before{
+  content:'';
+  background-color: red;
+  height: 1rem;
+  width: 5rem;
+
+}
+.timeline-item:nth-child(odd)::before{
+  left: calc(50% - 1rem);
+}
+.timeline-item:nth-child(even)::before{
+  right: calc(50% - 1rem);
+}
+.timeline-item:nth-child(even) {
+  justify-content: flex-end;
+}
+@media (max-width: 768px){
+  .timeline::before{
+    left: 3rem;
+  }
+  .timeline-item, timeline-item:nth-child(even){
+    justify-content: flex-start;
+  }
+  .item-content {
+    width: 90%;
+    margin-left: 8rem;
+  }
+  .timeline-item::before{
+    left:3rem;
+  }
+}
+
+.gold-border {
+  border: 4px solid;
+  border-image: linear-gradient(45deg, #d4af37, #f6e27a, #d4af37);
+  border-image-slice: 1;
+  border-radius: 8px;
+}
+
+
+
+
+
 .timeline-text{
   width: auto;
   height: 10rem;

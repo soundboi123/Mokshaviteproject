@@ -6,8 +6,10 @@
 }
 :root {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  --green: #5EC95C;
-  --yellow: rgb(255, 255, 0);
+  --green: #2c7e2a;
+  --yellow: rgb(255, 191, 0);
+  --gold: linear-gradient(90deg,rgba(144, 90, 1, 1) 0%,
+   rgba(255, 191, 0, 1) 50%, rgba(217, 146, 1, 1) 100%);
 }
 body {
   background-color: rgb(0, 0, 0);
@@ -290,7 +292,7 @@ nav ul li a {
   transition: 0.5s ease-in-out;
 }
 .skills{
-  align: start;
+  align-items: start;
   background-color: rgb(255, 225, 255,.2);
   opacity: .9;
   margin-inline: .2rem;
@@ -318,8 +320,15 @@ nav ul li a {
 }
 .wrapper2 article {
   background-color: rgb(255, 255, 255, 0.2);
-  border-radius: .2rem;
+  border-radius: 1rem;
   padding: 1rem;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.7rem;
+  height: 45vh;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  letter-spacing: 2px;
 }
 
 .section-three {
@@ -528,21 +537,20 @@ video {
   }
 }
 .pageButton{
-  background-color: rgb(255, 255, 255, 0.3);
+  background-color: var(--yellow);
   margin-inline-end: 1rem;
 }
 .pageButton:hover{
   transform: translate(0,-1px);
-  background-color: rgb(255, 255, 255, 0.4);
+  filter: drop-shadow(0 0 0.75rem var(--yellow));
 }
 .facebookButton{
-  background: #ADEBB3;
-  background: radial-gradient(circle,rgba(0, 168, 17, 1) 0%, var(--green) 100%);
+  background: var(--green)
    /*46, 111, 64, 1       0, 168, 17, 1*/
 }
 .facebookButton:hover{
   transform: translate(0, -1px);
-  background-color: var(--green);
+  filter: drop-shadow(0 0 0.75rem var(--green));
 }
 @keyframes slideinFromRight{
   0%{
@@ -745,7 +753,7 @@ video {
   display: flex;
   align-items: center;
   place-content: center;
-  flex-direction: ;
+  flex-direction: row;
   width: 100%;
   height: 20vh;
   /*background-color: rgb(22, 22, 22, 0.6);*/
@@ -791,4 +799,9 @@ video {
 }
 .hero-spacer{
     height: 5rem;
+}
+.upcoming-event-card{
+  background-color: #2c7e2a;
+  text-align: center;
+
 }

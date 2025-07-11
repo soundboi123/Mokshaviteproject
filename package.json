@@ -10,5 +10,17 @@
   },
   "devDependencies": {
     "vite": "^6.3.5"
-  }
+  },
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soundboi123/Mokshaviteproject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soundboi123/Mokshaviteproject/issues"
+  },
+  "homepage": "https://github.com/soundboi123/Mokshaviteproject#readme",
+  "description": ""
 }

@@ -3,7 +3,9 @@
 }
 .hero-spacer{
     height: 5rem;
-    width: 100%;
+}
+.small-spacer{
+    height: 3.4rem;
 }
 .medium-spacer{
     height: 6rem;
@@ -11,255 +13,186 @@
 .larger-spacer{
     height: 12rem;
 }
-.autoShow {
+.hero-spacer{
+    height: 1.8rem;
+}
+.autoShow,
+.autoShow2,
+.autoShow3 {
   opacity: 0;
   transform: translateY(3rem) scale(0.9);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  width: 100%;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition-delay: 0s; 
 }
-.autoShow.visible {
+
+.visible{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/*.autoShow.visible {
   opacity: 1;
   transform: translateY(0) scale(1);
+}*/
+
+.market-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+
 }
-
-
-.market-hero {
+.market-hoodie-section {
   display: flex;
-  top: 50%;
-  width: 100%;
-  height: 70vh;
   justify-content: center;
-  background-color: #1a1a1a;
+  align-items: center;
+  gap: 2rem;
+  width: 80%;
+  transform:scaleY(0.9);
+  justify-content: center;
+  background-size:cover;
+  background-image: 
+  url('/market-images/hoodie-section-backgrouns.png');
+  border-radius: 4.5rem;
 }
-.market-hero-img {
-    position: relative;
+.market-hoodie-card{
+    width: 40%;
+    height: 100%;
+}
+.market-hoodie-info-card{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    text-align: center;
     align-items: center;
     justify-content: center;
-    filter: hue-rotate(180deg) saturate(2);
-    height: 70vh;
-    width: 90%;
-    border-radius: 20px;
-    box-shadow: rgb(0, 0, 0) 0 0 20px 10px;
-}
-.market-hero-img img{
-
-    height: 80vh;
-    width: 100%;
-    border-radius: 20px;
-}
-
-.market-grid{
-    display: flex;
-    position: absolute;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    max-width: 80rem;
-    width: 100%;
-    height: 80vh;
-}
-
-.market-sweater-card{
-    width: 50%;
-    height: 70vh;
-    border-radius: 10px;
-}
-.market-sweater-card img{
-    margin-left: 2rem;
-    height: 70vh;
-}
-
-.market-text-container{
-    display: flex;
     flex-direction: column;
-    justify-content: end;
-    align-items: end;
-    width: 50%;
-    height: 70vh;
-}
-.market-text-card{
-    display: flex;
-    position: absolute;
-    border-radius: 10px;  
-    font-size: 1.8rem;
-    width: 20rem;
-    height: 6rem;
-
-
-
-}
-.info-card{
-    display: flex;
-    justify-content: start;
-    align-content: start;
-    align-self: start;
-    width: 18rem;
-    height: 6rem;
-    border-radius: 20px;
-    padding: 1rem;   
-    text-align: start;
-    font-size: 1.5rem;
 }
 .buy-now{
     display: flex;
-    position: absolute;
+    align-items: center;
     justify-content: center;
-    align-content: center;
-    top: 70%;
-    left: 50%;
     margin-top: 1rem;
-    height:3rem;
-    width: 10rem;
-    background-color:#0071E3;
-    font-size: 1.5rem;
+    width: 17rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: blue;
     text-align: center;
+    font-size: 2rem;
+}
+.hoodie-img{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 120%;
+    height: 100%;
+}
+.hoodie-text1{
+    font-size: 3.5rem;
     font-weight: bold;
-    border-radius: 20px;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    line-height: 1rem;
 }
-.product-section-clothes{
-    display: flex;
-    flex-direction: column;
-    place-content: center;
-    align-items: center;
-    width: 100vw;
+.hoodie-text2{
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    line-height: 5rem;
 }
-.product-section-plants{
+
+
+.market-plant-section{
     display: flex;
-    flex-direction: column;
-    place-content: center;
+    justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 80vh;
-    background-color: green;
-}
-.product-section-lamps{
-    display: flex;
-    flex-direction: column;
-    place-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 80vh;
-    background-color: rgb(198, 158, 0);
-}
-.product-grid{
-    display: flex;
-    place-content: center;
-    align-items: center;
-    flex-wrap: wrap;    
-    width: 80%;
-    border-radius: 20px;
-    background-color: rgba(36, 36, 36, 0.521);
     gap: 2rem;
-    transition: 0.3s ease-in-out;
+    width: 80%;
+    height: 50rem;
+    background-size:cover;
+    background-color: rgba(0, 128, 0, 0.167);
+    border-radius: 4.5rem;
+}
+.plant-card-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 28.8rem;
+    height: 95%;
+    border-radius: 3.7rem;
 
 }
-.product-preview{
+.plant-card1{
     display: flex;
     align-items: center;
-    place-content: center;
-    height: 40rem;
-    width: 40%;
-    border-radius: 15px;
-    background-color: rgb(27, 26, 26);
-    margin: 1rem;
-    transition: 0.3s ease-in-out;
-
-}
-.product-card{
-    display: flex;
-    position: relative;
-    place-content: center;
-    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 100%;
-    padding: 1rem;
-    transition: 0.3s ease-in-out;
+    height: 16rem;
+    background-color: rgb(255, 245, 220);
+    border-radius: 3.7rem;
 
 }
-.product-card img{
-    object-fit: cover;
-    height: 100%;
-    border-radius: 15px;
-    transition: 0.3s ease-in-out;
-
-}
-.product-preview:hover{
-    transform: scale(1.01);
-    box-shadow: rgb(0, 0, 0, 0.5) 0 0 10px 1px;
-    border-radius: 20px;
-    padding: 0.5rem;
-    transition: 0.3s ease-in-out; 
-}
-.product-preview:hover .product-card img{
-    filter: blur(5px);
-    transition: 0.3s ease-in-out;
-}
-.product-preview:hover .more-info{
-    opacity: 1;
-}
-
-.more-info{
-    position: absolute;
+.plant-card2{
     display: flex;
     align-items: center;
-    place-content: center;
-    height: 3.6rem;
-    width: 12rem;
-    padding: 0.6rem;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: 0.3s ease-in-out;
-    text-align: center; 
-    font-size: 1.6rem;
-    font-weight: bold;
-    border-radius: 40px;
-    border: solid 2px white;
-    opacity: 0%;
+    justify-content: center;
+    width: 100%;
+    height: 30rem;
+    background-color: rgb(255, 245, 220);
+    border-radius: 3.7rem;
+
 }
 
-
-
-.special-container {
-  --r: 20px; /* the radius */
-  --s: 20px; /* size of inner curve */
-  --x: 115px; /* horizontal offset (no percentage) */
-  --y: 30px; /* vertical offset (no percentage) */
-  
-  display: flex;
-  width: 21rem;
-  height: 15rem;
-  aspect-ratio: 1;
-  padding: 1rem;
-  -webkit-backdrop-filter: blur(10px);  
-   background-color: #ffffff70;
-   color: rgb(0, 0, 0);
-
-
-  border-radius: var(--r);
-  --_m:/calc(2*var(--r)) calc(2*var(--r)) radial-gradient(#000 70%,#0000 72%);
-  --_g:conic-gradient(from 180deg at var(--r) calc(100% - var(--r)),#0000 25%,#000 0);
-  --_d:(var(--s) + var(--r));
-  mask:
-    calc(var(--_d) + var(--x)) 100% var(--_m),
-    0 calc(100% - var(--_d) - var(--y)) var(--_m),
-    radial-gradient(var(--s) at 0 100%,#0000 99%,#000 calc(100% + 1px)) 
-     calc(var(--r) + var(--x)) calc(-1*var(--r) - var(--y)),
-    var(--_g) calc(var(--_d) + var(--x)) 0,
-    var(--_g) 0 calc(-1*var(--_d) - var(--y));
-  mask-repeat: no-repeat;
-}
-
-/*.info-card{
+.market-3Dprint-section{
     display: flex;
-    justify-content: start;
-    align-content: start;
-    height: 8rem;
-    width: 60%;
-    border-radius: 20px;
-    padding: 1rem;
-    backdrop-filter: blur(10px);    
-    box-shadow:inset rgb(0, 0, 0, 0.5) 0 0 10px 1px;
-    text-align: start;
-    font-size: 1.5rem;
-}*/
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 80%;
+    transform:scaleY(0.8);
+    justify-content: center;
+    background-size:cover;
+    background-color: rgba(25, 25, 25, 0.4);
+    border-radius: 4.5rem;
+    padding: 3rem
+}
+.market-3Dprint-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    background-color: rgb(255, 245, 220);
+    border-radius: 1.5rem;
+}
+
+.hover-button {
+  position: absolute;
+  font-size: 1.3rem;
+   padding: 0.5rem 1rem;
+  background-color: rgba(0, 128, 0, 0.8); /* greenish button */
+  color: white;
+  border-radius: 0.5rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+.product-card :hover {
+  opacity: 1;
+  position: relative;
+  transition: transform 0.3s ease;
+    transform: scale(1.05);
+
+}
+.market-3Dprint-card:hover .hover-button,
+.plant-card1:hover .hover-button,
+.plant-card2:hover .hover-button {
+  opacity: 1;
+  transform: translateY(0);
+}

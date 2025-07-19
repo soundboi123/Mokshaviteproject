@@ -54,6 +54,8 @@
   background-image: 
   url('/market-images/hoodie-section-backgrouns.png');
   border-radius: 4.5rem;
+    font-family: 'Orbitron', sans-serif;
+
 }
 .market-hoodie-card{
     width: 40%;
@@ -68,41 +70,93 @@
     justify-content: center;
     flex-direction: column;
 }
-.buy-now{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
-    width: 17rem;
-    height: 4rem;
-    border-radius: 1rem;
-    background-color: blue;
-    text-align: center;
-    font-size: 2rem;
-}
-.hoodie-img{
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    width: 120%;
-    height: 100%;
-}
 .hoodie-text1{
     font-size: 3.5rem;
     font-weight: bold;
     color: white;
     text-align: center;
     padding: 1rem;
-    line-height: 1rem;
+    line-height: 2rem;
 }
 .hoodie-text2{
-    font-size: 5rem;
+    font-size: 4.1rem;
     font-weight: bold;
     color: white;
     text-align: center;
     padding: 1rem;
-    line-height: 5rem;
+    line-height: 3rem;
 }
+.hoodie-text3{
+    font-size: 4.55rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    line-height: 3rem;
+}
+.hoodie-img {
+    width: 120%;
+    height: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* #region Buy Now Button */
+.buy-now-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
+.buy-now-element {
+  width: 19rem;
+  height: 6rem;
+  background: #111111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+.buy-now-element h2 {
+  color: #0ff;
+  font-size: 2rem;
+  position: relative;
+  z-index: 2;
+  transition: all 0.5s ease;
+}
+.buy-now-element::before,
+.buy-now-element::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-radial-gradient(
+    circle at center, 
+    #0ff 1px, 
+    transparent 2px, 
+    transparent 40px
+  );
+  border:#0ff 0.2rem solid;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.buy-now-element:hover::before {
+  transform: scale(2) rotate(45deg);
+  opacity: 0.3;
+}
+.buy-now-element:hover::after {
+  opacity: 0.3;
+}
+/* #endregion Buy Now */
+
+
 
 
 .market-plant-section{
@@ -175,14 +229,30 @@
   position: absolute;
   font-size: 1.3rem;
    padding: 0.5rem 1rem;
-  background-color: rgba(0, 128, 0, 0.8); /* greenish button */
+  background-color: rgba(0, 128, 0, 0.8);
   color: white;
   border-radius: 0.5rem;
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
   cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+
 }
+.hover-button2 {
+  position: absolute;
+  font-size: 2rem;
+   padding: 0.5rem 1rem;
+  background-color: rgba(0, 128, 0, 0.8);
+  color: white;
+  border-radius: 1rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+}
+
 .product-card :hover {
   opacity: 1;
   position: relative;
@@ -190,7 +260,7 @@
     transform: scale(1.05);
 
 }
-.market-3Dprint-card:hover .hover-button,
+.market-3Dprint-card:hover .hover-button2,
 .plant-card1:hover .hover-button,
 .plant-card2:hover .hover-button {
   opacity: 1;
